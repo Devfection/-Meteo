@@ -1,5 +1,5 @@
 body{
-    background-color: #CBC3E3; 
+    background-color: #e5cce5; 
 }
 .weather-app{
     background-color: white;
@@ -7,7 +7,7 @@ body{
     margin: 30px 0 auto; 
     padding: 30px; 
     border-radius: 10px;
-    box-shadow: 20px 20px 20px #BDB5D5 ;
+    box-shadow: 20px 20px 20px #d8b2d8 ;
 }
 header{
     font-size: 20px;
@@ -18,13 +18,32 @@ font-size: 12px;
 align-items: center;
 }
 .city-submit{
-    background-color:  #c527ec;
+    background-color:  #800080;
+    color: white;
     border-width: 0px;
     border-radius: 4px;
     padding: 5px 20px;
 
 }
 .city-input{
-    background-color: #CBC3E3;
-
+    background-color: #e5cce5;
+    border-width: 1px;
+    border-color:#d8b2d8;
+    padding: 2px;
+    color: #190019;
+    
+}
+.dark-mode-button{
+    border-color: #190019;
+    border-width: 0.5px;
+    color: #330033;
+    background-color: #f2e5f2;
+    justify-self: right;
+}
+.dark-mode-button:hover{
+    background-color: #330033;
+    color: #d8b2d8;
+}
+.button div{
+    justify-content: right;
 }
