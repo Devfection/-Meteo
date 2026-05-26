@@ -1,0 +1,18 @@
+body{
+    background-color: #CBC3E3; 
+}
+.weather-app{
+    background-color: white;
+    max-width: 600px;
+    margin: 30px 0 auto; 
+    padding: 30px; 
+    border-radius: 10px;
+}
+header{
+    font-size: 20px;
+
+}
+footer{
+font-size: 12px;
+align-items: center;
+}
