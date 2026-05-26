@@ -7,6 +7,7 @@ body{
     margin: 30px 0 auto; 
     padding: 30px; 
     border-radius: 10px;
+    box-shadow: 20px 20px 20px #BDB5D5 ;
 }
 header{
     font-size: 20px;
@@ -15,4 +16,15 @@ header{
 footer{
 font-size: 12px;
 align-items: center;
+}
+.city-submit{
+    background-color:  #c527ec;
+    border-width: 0px;
+    border-radius: 4px;
+    padding: 5px 20px;
+
+}
+.city-input{
+    background-color: #CBC3E3;
+
 }
