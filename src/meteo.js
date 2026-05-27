@@ -7,6 +7,12 @@ function refreshWeather(response){
     let speedElement = document.querySelector("#wind");
     let timeElement = document.querySelector("#time");
     let date = new Date(response.data.time * 1000);
+    let iconElement = document.querySelector("#icon");
+
+    
+    
+    iconElement.innerHTML = `<img class="weather-app-icon" src="${response.data.condition.icon_url}">` ;
+
 
     timeElement.innerHTML = formatDate(date);
     speedElement.innerHTML = `${response.data.wind.speed}km/h`;
@@ -14,12 +20,10 @@ function refreshWeather(response){
     descriptionElement.innerHTML = response.data.condition.description;
     cityElement.innerHTML = response.data.city ;
     temperatureElement.innerHTML = Math.round(temperature);
-    
+   
 }
 
 function formatDate(date){
-    
-   
     let minutes = date.getMinutes();
     let hours  = date.getHours();
     let days = [

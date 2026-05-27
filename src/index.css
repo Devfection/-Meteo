@@ -83,7 +83,8 @@ align-items: center;
 }
 
 .weather-app-icon {
-  font-size: 44px;
+  width: 60px;
+  height:60px;
   margin-top: 22px;
 }
 
@@ -94,6 +95,6 @@ align-items: center;
 }
 
 .weather-app-unit {
-  margin-top: 16px;
+  margin-top: 14px;
   font-size: 28px;
 }
