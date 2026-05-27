@@ -77,7 +77,7 @@ function displayForecast(response){
             <div class="weather-forecast-day"> ${formatDay(day.time)} </div>
             <div><img class="weather-forecast-icon" src="${day.condition.icon_url}">  </div>
             <div class="weather-forecast-temperatures">
-            <div class="weather-forecast-temperature"> <strong>${Math.round(day.temperature.maximum)}°C </strong>
+            <div class="weather-forecast-temperature-max"> <strong>${Math.round(day.temperature.maximum)}°C </strong>
             </div>
             <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}°C
             </div>
@@ -97,8 +97,14 @@ function getForecast(city){
 };
 
 
-//displayForecast(); 
 let searchFormElement = document.querySelector("#form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
-
 searchCity("Amsterdam");
+
+
+function changeTheme() {
+                let body = document.querySelector("body");
+                document.body.classList.toggle("dark")}
+let themeButton = document.querySelector(".theme-Button");
+ let themeChangeElement = document.querySelector("#theme-changer");
+themeChangeElement.addEventListener("click", changeTheme);
