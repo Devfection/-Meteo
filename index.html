@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
-    
+
     <title>Meteo</title>
     <link rel="stylesheet" href="src/index.css">
     </head>
@@ -33,16 +33,17 @@
     <body>
          <div class="weather-details">
             <span> 
-                <h1 class="current-city" id="current-city">Madrid</h1>
+                <h1 class="current-city" id="current-city"></h1>
                 
                 <p>
-                    Tuesday 26th April, 12:12 <span id="description">scattered  clouds</span> <br/>
-                    Humidity: <span class="accent"> 80% </span><br/>
-                    Wind:  <span class="accent"> 2km/h </span>
+                    <span id="time" ></span>
+                    <span id="description"> %</span> <br/>
+                    Humidity: <span class="accent" id="humidity"> </span><br/>
+                    Wind:  <span class="accent" id="wind">  </span>
                  </p> 
             <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature">32</div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
             </span>
