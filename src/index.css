@@ -1,13 +1,13 @@
 body{
     background-color: #d5fff9; 
     font-family:"Roboto", sans-serif;
-    margin: 50px 250px auto;
+    margin: 50px 150px auto;
     align-items: center;
     font-size: 16px;
 }
 .weather-app{
     background-color: white;
-    max-width: 600px;
+    max-width: max-content;
     margin: 45px auto; 
     padding: 30px; 
     border-radius: 10px;
@@ -27,7 +27,9 @@ align-items: center;
     border-bottom-width: 2px;
     border-color:#190019;
     display: flex;
-    justify-content: space-between;
+    flex: 2 100%;
+    align-content: space-around;
+    gap: 30%;
 }
 .city-submit{
     background-color:  #179e8c;
@@ -51,11 +53,12 @@ align-items: center;
     width: 80%;
     font-size: 16px;
 }
-.button div{
+.button {
     height: 50px;
-    width: max-content;
+    
     display:flex;
-    justify-self: right;
+    flex-direction: column;
+    align-self: end;
 }
 
 
@@ -65,7 +68,10 @@ align-items: center;
     border-radius: 4px;
     color: #330033;
     background-color: #f2e5f2;
-    align-self: right;
+    align-self: self-end;
+    margin: 10px 20px;
+    padding: 5px 15px;
+    font-size: 15px;
 }
 .dark-mode-button:hover{
     background-color: #016969;
@@ -79,9 +85,11 @@ align-items: center;
 }
 
 .weather-app-temperature-container {
-  display: flex;
-}
+  display: flex}
 
+.degrees{
+    align-self: flex-start;
+}
 .weather-app-icon {
   width: 60px;
   height:60px;
