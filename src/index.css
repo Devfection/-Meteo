@@ -29,7 +29,7 @@ align-items: center;
     display: flex;
     flex: 2 100%;
     align-content: space-around;
-    gap: 30%;
+    gap: 20%;
 }
 .city-submit{
     background-color:  #179e8c;
@@ -105,4 +105,31 @@ align-items: center;
 .weather-app-unit {
   margin-top: 14px;
   font-size: 28px;
+}
+.weather-forecast{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.weather-forecast-day{
+    text-align: center;
+    color: #016969;
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.weather-forecast-icon{
+    font-size: 48px; 
+    text-align: center;
+}
+.weather-forecast-temperatures{
+    text-align: center; 
+    color: #016969;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.weather-forecast-temperature{
+    padding: 0 5px;
 }
